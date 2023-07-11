@@ -31,6 +31,13 @@ systemd-journal-remote \
 systemd-resolved -y
 ```
 
+Step 1b: Change DNS server in resolved config. Edit /etc/systemd/resolved.conf and adding your local server to the "DNS=" line.
+
+```
+nano /etc/systemd/resolved.conf
+systemctl restart systemd-resolved
+```
+
 Step 2: Install Docker-CE with the following command:
 
 ```bash
