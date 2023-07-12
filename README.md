@@ -60,7 +60,8 @@ apt install ./homeassistant-supervised.deb
 Step 5: Reboot system:
 
 ```bash
-sudo docker restart hassio_supervisor
+reboot
+docker restart hassio_supervisor
 ```
 
 ## Supported Machine types
