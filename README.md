@@ -57,6 +57,12 @@ wget https://github.com/home-assistant/supervised-installer/releases/latest/down
 apt install ./homeassistant-supervised.deb
 ```
 
+Step 5: Reboot system:
+
+```bash
+sudo docker restart hassio_supervisor
+```
+
 ## Supported Machine types
 
 - generic-x86-64
