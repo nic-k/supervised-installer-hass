@@ -35,6 +35,8 @@ Step 1b: Change DNS server in resolved config. Edit /etc/systemd/resolved.conf a
 
 ```
 nano /etc/systemd/resolved.conf
+rm /etc/resolv.conf 
+ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
 systemctl restart systemd-resolved
 ```
 
